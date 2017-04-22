@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+input.d1
+{
+top:500px;
+border: 5px inset green;
+width: 220px;
+display: block;
+background: url('top.jpg');
+color: red;
+text-align: left;
+text-decoration: none;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 10px green;
+/*transform: rotate(5deg);
+transition: transform 1s, width 1s;*/
+}
+input.btn
+{
+
+border: 5px inset green;
+width: 100px;
+display: block;
+
+color: red;
+text-align: left;
+text-decoration: none;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 10px green;
+/*transform: rotate(5deg);
+transition: transform 1s, width 1s;*/
+}
+input.btn:hover
+{
+
+color: green;
+width: 120px;
+box-shadow: 10px 10px 10px black;
+/*transform: rotate(5deg);*/
+
+}
+
+input.d1:hover
+{
+
+color: green;
+width: 225px;
+box-shadow: 10px 10px 10px black;
+/*transform: rotate(5deg);*/
+
+}
+</style>
+</head>
+<form action="/cgi-bin/lvextend.py" method="POST">
+FOLDER name:
+</br>
+<input class='d1' type="text" name="nm" color='red'/>
+<br/>
+FOLDER size:
+</br>
+<input class='d1' type="text" name="sz" color='red'/>
+<br/>
+
+<input class='btn'type="submit" value="HIT">
+</form>
+
+</html>
+
+
+
+

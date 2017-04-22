@@ -1,0 +1,67 @@
+<style>
+div.tp
+{
+ background:red url('bg1.jpg') repeat;
+ text-align: center;
+ text-decoration:blink;
+ line-height:300%;
+ 
+ font-style:italic;
+ font-size:xx-large;
+ font-weight:inherit;
+ color:red;
+ width:100%;
+ height:100px;
+}
+
+
+/*div.middle
+{
+ background:white url('bg1.jpg') repeat;
+ 
+ position:relative;
+ top:-560px;
+ left:605px;
+ width:106px;
+ height:100%;
+  z-index:5;
+}*/
+iframe.if
+{
+ position:relative;
+ left:0px;
+ top:0px;
+ width:600px;
+ height:120%;
+
+}
+iframe.fi
+{
+ position:relative;
+ left:620px;
+ top:-630px;
+ width:670px;
+ height:120%;
+
+}
+iframe.fi:hover
+{
+  box-shadow:5px 5px 5px 5px blue;
+}
+iframe.if:hover
+{
+  box-shadow:10px 10px 10px 10px blue;
+}
+</style>
+
+
+<div class='right'>
+<iframe class='if' src="http://192.168.122.1/vnc/index.html?host=192.168.122.1&port=5555" name='fi' source=''>
+</iframe>
+</div>
+<div>
+<iframe class='fi' src="http://192.168.122.1/vnc/index.html?host=192.168.122.1&port=5556">
+</iframe>
+
+</div>
+

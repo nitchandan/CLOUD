@@ -1,0 +1,36 @@
+<html>
+<style>
+fieldset.xh
+{
+position:absolute;
+top:20%;
+left:23%;
+width:50%;
+height:57%;
+
+box-shadow:10px 10px 10px  #cc3300;
+background-color:aqua;
+
+}
+
+</style>
+<body style="background:url('colortheory.jpg');">
+<center>
+ <form  action="http://192.168.122.1/cgi-bin/iassnew.cgi">
+  <fieldset class="xh"><br>
+   <center> <legend style="font-weight:bold;font-size:22px;color:#cc3300;">Configure your os:</legend></center><br>
+    Os Name: <input type="text" size="30"style="border-radius:10px;" name="z"placeholder=name><br><br>
+    Os Type: &nbsp;&nbsp;<input type="text" size="30" name="x" style="border-radius:10px;"placeholder=RHEL7><br><br>
+    Ram:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="y"style="border-radius:10px;"placeholder=1024/2048><br><br>
+    Hard Disk:&nbsp;<input type="text" size="30" name="w"style="border-radius:10px;"placeholder='(inGB)'><br><br>
+    CPU :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <input type="text" size="30" name="v"style="border-radius:10px;"placeholder='1/2/3(core)'><br><br>
+Username:<input type="text" size="30" name="o"style="border-radius:10px;"placeholder=' username'><br>
+Number of os:<input type="text" size="30" name="k"style="border-radius:10px;"placeholder=' number of os'>
+    <input type="submit" value="Launch OS"style="width:120px;height:40px;position:relative;left:30px;font-family:'Comic Sans MS',cursive,sans-serif;color:#CC3300;background:black;font-weight:bold;border:none;" />
+    <input type="reset" value="Reconfigure"style="width:120px;height:40px;position:relative;left:80px;font-family:'Comic Sans MS',cursive,sans-serif;color:#CC3300;font-weight:bold;background:black;border:none;" />	 	
+  </fieldset>
+</form>
+</center> 
+</body>
+</html>
+

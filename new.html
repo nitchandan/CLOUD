@@ -1,0 +1,143 @@
+<style>
+input.d1
+{
+top:500px;
+border: 5px inset green;
+width: 220px;
+display: block;
+background: url('top.jpg');
+color: red;
+text-align: left;
+text-decoration: none;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 10px green;
+/*transform: rotate(5deg);
+transition: transform 1s, width 1s;*/
+}
+input.btn
+{
+
+border: 5px inset green;
+width: 100px;
+display: block;
+
+color: red;
+text-align: left;
+text-decoration: none;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 10px green;
+/*transform: rotate(5deg);
+transition: transform 1s, width 1s;*/
+}
+input.btn:hover
+{
+
+color: green;
+width: 120px;
+box-shadow: 10px 10px 10px black;
+/*transform: rotate(5deg);*/
+
+}
+
+input.d1:hover
+{
+
+color: green;
+width: 225px;
+box-shadow: 10px 10px 10px black;
+/*transform: rotate(5deg);*/
+
+}
+
+div.tp
+{
+ background:black url('bg1.jpg') repeat;
+ text-align: center;
+ text-decoration:blink;
+ line-height:300%;
+ 
+ font-style:italic;
+ font-size:xx-large;
+ font-weight:inherit;
+ color:red;
+ width:100%;
+ height:100px;
+}
+
+form.frm
+{
+border:2px solid black;
+width:250;
+
+background:grey;
+border-radius: 10px 10px 10px 10px;
+height:400px;
+}
+
+form.frm:hover
+{
+left:0px;
+color: brown;
+box-shadow: 5px 5px 5px 5px maroon;
+
+
+}
+iframe.if
+{
+ position:relative;
+ left:250px;
+ top:-420px;
+ width:100%;
+ height:95%;
+
+}
+iframe.new
+{
+ position:relative;
+ left:0px;
+ top:0px;
+ width:100%;
+ height:100%;
+
+}
+a.link
+{
+position:relative;
+top:30px;
+left:200px;
+}
+</style>
+<div class='tp'>
+
+OPERATING SYSTEM IN BROWSER!!!
+
+<a class='link' href='http://192.168.122.1/gallery.html'>OS GALLERY</a>
+
+</div>
+
+
+<div class='left'>
+<form class='frm' action="/cgi-bin/iaas.py"  method = "post" target='fi'>
+OS NAME :<br />
+ <input  class='d1'type = 'text' name = 'onm'>
+</br>
+HARDDISK SIZE :</br>
+	<input class='d1' type = 'text' name = 'hds'>
+</br>
+RAM SIZE : </br>
+    <input  class='d1' type = 'text' name = 'rms'>
+</br>
+
+VCPU NUMBER: </br> 
+ <input class='d1' type = 'text' name = 'vcpu'>
+</br>
+<input class='btn' type = 'submit' value = 'LAUNCH'>
+
+</form>
+
+</div>
+<div class='right'>
+<iframe class='if' name='fi'>
+</iframe>
+
+</div>
